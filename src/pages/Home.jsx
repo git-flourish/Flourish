@@ -15,12 +15,8 @@ export default function Home() {
   return (
     <div className="bg-cream">
       <Navbar />
-      <div className="h-screen flex flex-col bg-cream">
-        <div className="flex-1 flex flex-col justify-end min-h-0">
-          <HeroSection />
-        </div>
-        <ScienceTicker />
-      </div>
+      <HeroSection />
+      <ScienceTicker />
       {/* ponytail: button + fine print only — full CtaBanner in step 2.12; flush before Footer for ref */}
       <section className="bg-flamingo py-16 md:py-20 text-center">
         <button
