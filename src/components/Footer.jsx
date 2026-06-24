@@ -9,20 +9,12 @@ export default function Footer() {
       <div className="py-10 overflow-hidden border-b border-cream/20">
         <div className="flex whitespace-nowrap">
           <div className="marquee-track flex items-center gap-12 pr-12">
-            {Array(8).fill(null).map((_, i) => (
+            {Array(16).fill(null).map((_, i) => (
               <span
                 key={i}
-                className="font-flourish text-[clamp(5rem,14vw,12rem)] font-black leading-none select-none"
-                style={{ color: i % 2 === 0 ? 'rgba(250,240,230,1)' : 'rgba(250,240,230,0.3)' }}
-              >
-                FLOURISH
-              </span>
-            ))}
-            {Array(8).fill(null).map((_, i) => (
-              <span
-                key={`b-${i}`}
-                className="font-flourish text-[clamp(5rem,14vw,12rem)] font-black leading-none select-none"
-                style={{ color: i % 2 === 0 ? 'rgba(250,240,230,1)' : 'rgba(250,240,230,0.3)' }}
+                className={`font-flourish text-[clamp(5rem,14vw,12rem)] font-black leading-none select-none text-cream ${
+                  i % 2 === 1 ? 'opacity-30' : ''
+                }`}
               >
                 FLOURISH
               </span>
