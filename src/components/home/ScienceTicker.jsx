@@ -10,7 +10,7 @@ export default function ScienceTicker() {
   ]
 
   return (
-    <div className="bg-mulberry py-4 overflow-hidden border-y border-mulberry">
+    <div className="bg-mulberry py-4 overflow-hidden border-y border-mulberry shrink-0">
       <div className="flex whitespace-nowrap">
         <div className="ticker-track flex items-center">
           {[...items, ...items].map((item, i) => (

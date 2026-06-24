@@ -7,7 +7,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <section className="relative min-h-screen bg-cream flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative bg-cream flex flex-col items-center overflow-hidden pt-24 md:pt-28">
         <div className="orbital-ring w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" />
         <div className="orbital-ring w-[900px] h-[900px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10" />
         <div className="orbital-ring w-[400px] h-[400px] -top-20 -left-20 opacity-15" />
