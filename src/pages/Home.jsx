@@ -21,8 +21,7 @@ export default function Home() {
         </div>
         <ScienceTicker />
       </div>
-      <HowItWorksStub />
-      {/* ponytail: button + fine print only — full CtaBanner in step 2.12; needed for footer ref flush flamingo→marquee */}
+      {/* ponytail: button + fine print only — full CtaBanner in step 2.12; flush before Footer for ref */}
       <section className="bg-flamingo py-16 md:py-20 text-center">
         <button
           type="button"
@@ -37,6 +36,7 @@ export default function Home() {
         </p>
       </section>
       <Footer />
+      <HowItWorksStub />
       <WaitlistModal
         isOpen={queryModalOpen}
         onClose={() => setQueryModalOpen(false)}
