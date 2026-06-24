@@ -5,6 +5,7 @@ import HeroSection from '../components/home/HeroSection.jsx'
 import HowItWorksStub from '../components/home/HowItWorksStub.jsx'
 import ScienceTicker from '../components/home/ScienceTicker.jsx'
 import WaitlistModal from '../components/WaitlistModal.jsx'
+import Footer from '../components/Footer.jsx'
 
 export default function Home() {
   const [searchParams] = useSearchParams()
@@ -20,6 +21,7 @@ export default function Home() {
         <ScienceTicker />
       </div>
       <HowItWorksStub />
+      <Footer />
       <WaitlistModal
         isOpen={queryModalOpen}
         onClose={() => setQueryModalOpen(false)}
