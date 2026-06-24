@@ -1,0 +1,20 @@
+---
+description: Guardrails when working on autonomous loop tasks
+alwaysApply: false
+globs:
+  - loop/**
+---
+
+# Loop executor rules
+
+When running or editing files under `loop/tasks/`:
+
+- The task's `PLAN.md` is the source of truth. Do not invent steps or reorder phases.
+- Do exactly ONE plan step per agent run, then stop.
+- A step is "Done" ONLY when its `Fast check` output satisfies `Done when`.
+- **`loop/` is never tracked in git** — do not `git add` under `loop/`. Commit only
+  tracked paths the step changes (`dags/`, `tests/`, etc.). Never `git add -A`.
+- On missing credentials or tool errors: print `NEEDS_HUMAN` — never fabricate results.
+- Respect `task.env`: branch, dbt target, and phase gates (`GATE_MODE`).
+
+Task-specific dbt/SQL rules live in each task's `PROMPT.md`.

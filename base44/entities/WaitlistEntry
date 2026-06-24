@@ -1,0 +1,26 @@
+{
+  "name": "WaitlistEntry",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email Address"
+    },
+    "first_name": {
+      "type": "string",
+      "title": "First Name"
+    },
+    "source_page": {
+      "type": "string",
+      "enum": [
+        "homepage",
+        "science"
+      ],
+      "title": "Source Page"
+    }
+  },
+  "required": [
+    "email"
+  ]
+}
