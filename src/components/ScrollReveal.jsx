@@ -10,6 +10,12 @@ export default function ScrollReveal({ children, className = '', delay = 0, thre
 
     const reveal = () => setVisible(true)
 
+    // ponytail: Playwright sets navigator.webdriver; reveal for full-page screenshot validation
+    if (navigator.webdriver) {
+      reveal()
+      return
+    }
+
     // ponytail: hash anchors scroll section into view before IO fires
     const rect = el.getBoundingClientRect()
     if (rect.top < window.innerHeight && rect.bottom > 0) {

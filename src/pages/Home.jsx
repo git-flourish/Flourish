@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom'
 import Navbar from '../components/Navbar.jsx'
 import HeroSection from '../components/home/HeroSection.jsx'
 import PhaseSection from '../components/home/PhaseSection.jsx'
+import WhySection from '../components/home/WhySection.jsx'
 import ScienceTicker from '../components/home/ScienceTicker.jsx'
 import WaitlistModal from '../components/WaitlistModal.jsx'
 import Footer from '../components/Footer.jsx'
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <ScienceTicker />
       <PhaseSection />
+      <WhySection />
       {/* ponytail: button + fine print only — full CtaBanner in step 2.12; flush before Footer for ref */}
       <section className="bg-flamingo py-16 md:py-20 text-center">
         <button
