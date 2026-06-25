@@ -18,7 +18,7 @@ export default function ScienceTicker() {
               <span className="font-sans text-xs font-semibold text-cream/70 uppercase tracking-[0.2em]">
                 {item}
               </span>
-              <span className="text-flamingo text-xs">✦</span>
+              <span className="text-flamingo text-xs">+</span>
             </span>
           ))}
         </div>
