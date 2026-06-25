@@ -7,10 +7,19 @@ export default function ScrollReveal({ children, className = '', delay = 0, thre
   useEffect(() => {
     const el = ref.current
     if (!el) return
+
+    const reveal = () => setVisible(true)
+
+    // ponytail: hash anchors scroll section into view before IO fires
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      reveal()
+    }
+
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true)
+          reveal()
           obs.unobserve(el)
         }
       },
