@@ -89,8 +89,9 @@ export default function HeroSection() {
                 />
               ))}
             </div>
-            <p className="font-sans text-sm text-mulberry/60 ml-2">
-              <span className="text-flamingo font-semibold">1,200+ women</span> already on the waitlist
+            <p className="font-sans text-sm ml-2">
+              <span className="text-flamingo font-semibold">1,200+ women</span>
+              <span className="text-mulberry/60"> already on the waitlist</span>
             </p>
           </div>
         </div>
