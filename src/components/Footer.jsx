@@ -53,9 +53,10 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/now_flourish/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram @now_flourish"
             className="text-cream/70 hover:text-cream transition-colors"
           >
             <Instagram size={18} />
