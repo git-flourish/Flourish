@@ -1,13 +1,6 @@
 import { useState, useEffect } from 'react'
 import { X, ArrowRight, Sparkles } from 'lucide-react'
-
-// ponytail: in-memory mock until WaitlistEntry backend exists
-async function submitWaitlistEntry({ email, firstName, sourcePage }) {
-  await new Promise((r) => setTimeout(r, 400))
-  void sourcePage
-  void firstName
-  void email
-}
+import { submitWaitlistEntry } from '../api/waitlist.js'
 
 export default function WaitlistModal({ isOpen, onClose, sourcePage = 'homepage' }) {
   const [step, setStep] = useState('form')

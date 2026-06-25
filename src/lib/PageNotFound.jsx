@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function PageNotFound() {
   const location = useLocation()
@@ -19,12 +19,12 @@ export default function PageNotFound() {
           </p>
         </div>
         <div className="pt-6">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-flex items-center px-4 py-2 text-sm font-medium text-mulberry bg-white border border-mulberry/20 rounded-lg hover:bg-cream transition-colors"
           >
             Go Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

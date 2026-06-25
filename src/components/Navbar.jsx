@@ -51,12 +51,6 @@ export default function Navbar() {
             >
               Our Science
             </Link>
-            <a
-              href="#how-it-works"
-              className="nav-link font-sans text-sm font-medium tracking-wide text-mulberry/70 hover:text-mulberry transition-colors"
-            >
-              How It Works
-            </a>
           </div>
 
           <div className="hidden md:block">
@@ -90,9 +84,6 @@ export default function Navbar() {
             >
               Our Science
             </Link>
-            <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="font-sans text-base font-medium text-mulberry">
-              How It Works
-            </a>
             <button
               type="button"
               onClick={() => {
