@@ -15,7 +15,7 @@ export default function Home() {
   const [queryModalOpen, setQueryModalOpen] = useState(searchParams.get('waitlist') === '1')
 
   return (
-    <div className="bg-cream">
+    <div className="min-h-screen bg-cream">
       <Navbar />
       <HeroSection />
       <ScienceTicker />
