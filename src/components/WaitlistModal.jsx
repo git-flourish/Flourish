@@ -80,7 +80,9 @@ export default function WaitlistModal({ isOpen, onClose, sourcePage = 'homepage'
               Inner Circle
             </h2>
             <p className="text-cream/80 font-sans text-base mb-8 leading-relaxed">
-              Be first to know when Flourish launches. Four formulas. Built for every phase of you.
+              Be the first to know when Flourish launches.
+              <br />
+              Four phases. Four formulas.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">

@@ -5,28 +5,29 @@ import Footer from '../components/Footer.jsx'
 import ScienceTicker from '../components/home/ScienceTicker.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
 import WaitlistModal from '../components/WaitlistModal.jsx'
+import HormoneCycleChart from '../components/HormoneCycleChart.jsx'
 import { phases } from '../data/phaseData.js'
 
 const principles = [
   {
     icon: FlaskConical,
     title: 'Evidence First',
-    body: 'Every ingredient in every formula is backed by peer-reviewed clinical data — not trend cycles, not marketing.',
+    body: 'Every ingredient in each formula is researched and checked for synergy.',
   },
   {
     icon: Leaf,
     title: 'Bioavailability by Design',
-    body: 'We choose the forms of nutrients your body actually absorbs — bisglycinate chelates, methylated B-vitamins, water-soluble delivery.',
+    body: 'Ingredients are chosen in their most absorbable format.',
   },
   {
     icon: Zap,
-    title: 'Cycle Intelligence',
-    body: "Supplements timed to your phase don't just check nutrient boxes — they work with your body's natural hormonal architecture.",
+    title: 'Cycle Synced',
+    body: 'Each formula is exactly mapped to each phase in the natural hormonal cycle.',
   },
   {
     icon: Shield,
-    title: 'Clean & Vegan',
-    body: 'No fillers, no animal-derived gelatin capsules, no unnecessary additives. Cruelty-free certified. Ethically sourced.',
+    title: 'Clean and Vegan',
+    body: 'There are no animal derivatives in our product, no unnecessary additives and our ingredients are ethically sourced.',
   },
 ]
 
@@ -53,7 +54,7 @@ export default function Science() {
                 <span className="text-flamingo italic">of your cycle.</span>
               </h1>
               <p className="font-sans text-lg text-mulberry/60 leading-relaxed max-w-2xl">
-                We reviewed 150+ clinical trials, journals, and studies to build four formulas that match
+                We reviewed clinical trials, journals, and studies to build four formulas that match
                 exactly what your body needs at each phase of your 28-day cycle. Here&apos;s the evidence.
               </p>
             </ScrollReveal>
@@ -91,10 +92,10 @@ export default function Science() {
             <ScrollReveal className="text-center mb-14">
               <p className="font-sans text-xs uppercase tracking-[0.3em] text-flamingo mb-3">Four Formulas</p>
               <h2 className="font-flourish text-[clamp(2.5rem,6vw,5rem)] font-black text-cream leading-tight">
-                Phase-by-phase breakdown
+                The natural hormonal cycle explained
               </h2>
               <p className="mt-4 font-sans text-base text-cream/60 max-w-xl mx-auto">
-                Select a phase to explore the clinical rationale and key ingredients behind each formula.
+                Understand your cycle, phase by phase.
               </p>
             </ScrollReveal>
 
@@ -144,13 +145,10 @@ export default function Science() {
                       </p>
                     </div>
                     <p
-                      className="font-sans text-xs uppercase tracking-[0.2em] mb-2"
+                      className="font-sans text-xs uppercase tracking-[0.2em] mb-4"
                       style={{ color: phase.color }}
                     >
-                      Our mission this phase
-                    </p>
-                    <p className="font-flourish text-[clamp(1.4rem,3vw,2.2rem)] font-bold text-mulberry leading-snug mb-6">
-                      {phase.mission}
+                      This is whats happening in your body
                     </p>
                     <p className="font-sans text-sm text-mulberry/70 leading-relaxed">{phase.scienceBody}</p>
                   </div>
@@ -211,30 +209,8 @@ export default function Science() {
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <div className="relative">
-                <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-coral via-sage via-flamingo to-lavender opacity-40" />
-                <div className="grid md:grid-cols-4 gap-6">
-                  {phases.map((p) => (
-                    <div
-                      key={p.name}
-                      className="flex flex-col items-center md:items-start text-center md:text-left"
-                    >
-                      <div
-                        className="w-12 h-12 rounded-full flex items-center justify-center text-xl mb-4 relative z-10"
-                        style={{ background: `${p.color}20`, border: `2px solid ${p.color}` }}
-                      >
-                        {p.emoji}
-                      </div>
-                      <p className="font-sans text-xs uppercase tracking-widest text-mulberry/40 mb-1">
-                        {p.days}
-                      </p>
-                      <h3 className="font-flourish text-xl font-bold mb-1" style={{ color: p.color }}>
-                        {p.name}
-                      </h3>
-                      <p className="font-sans text-xs text-mulberry/60">{p.phase}</p>
-                    </div>
-                  ))}
-                </div>
+              <div className="rounded-3xl bg-white/60 border border-flamingo/10 p-6 md:p-10">
+                <HormoneCycleChart />
               </div>
             </ScrollReveal>
           </div>

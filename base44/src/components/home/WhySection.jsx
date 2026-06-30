@@ -2,11 +2,11 @@ import ScrollReveal from "../ScrollReveal";
 import { CheckCircle2, X } from "lucide-react";
 
 const differentiators = [
-  { label: "Women specific", flo: true, thorne: true, flourish: true },
-  { label: "Cycle-synced formula", flo: true, thorne: false, flourish: true },
-  { label: "Sequenced by phase", flo: false, thorne: false, flourish: true },
-  { label: "Water soluble — Bioavailability", flo: false, thorne: false, flourish: true },
-  { label: "Vegan, ethically sourced", flo: false, thorne: false, flourish: true },
+  { label: "Women specific", others: true, flourish: true },
+  { label: "Cycle-synced formula", others: true, flourish: true },
+  { label: "Sequenced by phase", others: false, flourish: true },
+  { label: "Water soluble — Bioavailability", others: false, flourish: true },
+  { label: "Vegan, ethically sourced", others: false, flourish: true },
 ];
 
 export default function WhySection() {
@@ -39,10 +39,9 @@ export default function WhySection() {
           <ScrollReveal delay={0.15}>
             <div className="rounded-2xl overflow-hidden border border-cream/10">
               {/* Header */}
-              <div className="grid grid-cols-4 bg-cream/5 px-4 py-4">
+              <div className="grid grid-cols-3 bg-cream/5 px-4 py-4">
                 <div />
-                <p className="font-sans text-xs text-center text-cream/40 uppercase tracking-wider">Flo-Living</p>
-                <p className="font-sans text-xs text-center text-cream/40 uppercase tracking-wider">Thorne</p>
+                <p className="font-sans text-xs text-center text-cream/40 uppercase tracking-wider">Others</p>
                 <p className="font-sans text-xs text-center text-flamingo uppercase tracking-wider font-semibold">Flourish</p>
               </div>
 
@@ -50,20 +49,13 @@ export default function WhySection() {
               {differentiators.map((d, i) => (
                 <div
                   key={d.label}
-                  className={`grid grid-cols-4 px-4 py-4 items-center border-t border-cream/10 ${
+                  className={`grid grid-cols-3 px-4 py-4 items-center border-t border-cream/10 ${
                     i % 2 === 0 ? "bg-transparent" : "bg-cream/[0.03]"
                   }`}
                 >
                   <p className="font-sans text-sm text-cream/70 pr-2">{d.label}</p>
                   <div className="flex justify-center">
-                    {d.flo ? (
-                      <CheckCircle2 size={18} className="text-sage" />
-                    ) : (
-                      <X size={16} className="text-cream/20" />
-                    )}
-                  </div>
-                  <div className="flex justify-center">
-                    {d.thorne ? (
+                    {d.others ? (
                       <CheckCircle2 size={18} className="text-sage" />
                     ) : (
                       <X size={16} className="text-cream/20" />

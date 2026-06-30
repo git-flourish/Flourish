@@ -7,6 +7,7 @@ import { Toaster } from './components/Toaster.jsx'
 import PageNotFound from './lib/PageNotFound.jsx'
 import Home from './pages/Home.jsx'
 import Science from './pages/Science.jsx'
+import About from './pages/About.jsx'
 
 function AuthenticatedApp() {
   const { isLoadingAuth, isLoadingPublicSettings } = useAuth()
@@ -28,6 +29,7 @@ function AuthenticatedApp() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/science" element={<Science />} />
+      <Route path="/about" element={<About />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )

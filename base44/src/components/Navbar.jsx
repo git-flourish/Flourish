@@ -15,7 +15,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isScience = location.pathname === "/science";
+  const { pathname } = location;
+  const navLink = (path) =>
+    `nav-link font-sans text-sm font-medium tracking-wide transition-colors ${
+      pathname === path ? "text-flamingo" : "text-mulberry/70 hover:text-mulberry"
+    }`;
 
   return (
     <>
@@ -34,21 +38,14 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link
-              to="/"
-              className={`nav-link font-sans text-sm font-medium tracking-wide transition-colors ${
-              !isScience ? "text-flamingo" : "text-mulberry/70 hover:text-mulberry"}`
-              }>
-              
+            <Link to="/" className={navLink("/")}>
               Home
             </Link>
-            <Link
-              to="/science"
-              className={`nav-link font-sans text-sm font-medium tracking-wide transition-colors ${
-              isScience ? "text-flamingo" : "text-mulberry/70 hover:text-mulberry"}`
-              }>
-              
+            <Link to="/science" className={navLink("/science")}>
               Our Science
+            </Link>
+            <Link to="/about" className={navLink("/about")}>
+              About
             </Link>
             <a
               href="#how-it-works"
@@ -93,6 +90,13 @@ export default function Navbar() {
             className="font-sans text-base font-medium text-mulberry">
             
               Our Science
+            </Link>
+            <Link
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+            className="font-sans text-base font-medium text-mulberry">
+            
+              About
             </Link>
             <a
             href="#how-it-works"

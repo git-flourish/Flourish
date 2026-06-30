@@ -7,7 +7,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <section className="relative min-h-screen bg-cream flex flex-col items-center justify-center">
+      <section className="relative min-h-screen bg-cream flex flex-col items-center justify-center pt-28 md:pt-32">
         <div className="orbital-ring w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" />
         <div className="orbital-ring w-[900px] h-[900px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10" />
         <div className="orbital-ring w-[400px] h-[400px] -top-20 -left-20 opacity-15" />
@@ -30,10 +30,10 @@ export default function HeroSection() {
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
           <p
-            className="font-sans text-xs uppercase tracking-[0.3em] text-mulberry/60 mb-6 fade-up"
+            className="font-sans text-xs tracking-wide text-mulberry/60 mb-6 fade-up"
             style={{ animationDelay: '0.1s' }}
           >
-            The first cycle-synced supplement system
+            The first cycle-synced supplement
           </p>
 
           <h1
