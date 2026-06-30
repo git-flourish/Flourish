@@ -80,7 +80,10 @@ export async function submitWaitlistEntry({ email, firstName, sourcePage }) {
 
   if (!emailjsConfigured()) {
     if (!emailjsSkippedLogged) {
-      console.warn('EmailJS not configured — welcome email skipped')
+      console.error(
+        '[Flourish waitlist] EmailJS not configured — welcome email skipped. ' +
+          'Set VITE_EMAILJS_PUBLIC_KEY, VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_WELCOME_TEMPLATE_ID.',
+      )
       emailjsSkippedLogged = true
     }
     return
@@ -89,6 +92,7 @@ export async function submitWaitlistEntry({ email, firstName, sourcePage }) {
   try {
     await sendWelcomeEmail({ email, firstName })
   } catch (err) {
+    console.error('[Flourish waitlist] EmailJS welcome email failed:', err?.text || err?.message || err)
     await notifyWelcomeFailure({ email, sourcePage, error: err })
   }
 }

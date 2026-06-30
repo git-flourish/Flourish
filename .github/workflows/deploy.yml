@@ -15,6 +15,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -22,6 +23,17 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Verify build secrets are set
+        run: |
+          test -n "$VITE_WEB3FORMS_ACCESS_KEY" || (echo "Missing VITE_WEB3FORMS_ACCESS_KEY" && exit 1)
+          test -n "$VITE_EMAILJS_PUBLIC_KEY" || (echo "Missing VITE_EMAILJS_PUBLIC_KEY" && exit 1)
+          test -n "$VITE_EMAILJS_SERVICE_ID" || (echo "Missing VITE_EMAILJS_SERVICE_ID" && exit 1)
+          test -n "$VITE_EMAILJS_WELCOME_TEMPLATE_ID" || (echo "Missing VITE_EMAILJS_WELCOME_TEMPLATE_ID" && exit 1)
+        env:
+          VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_WEB3FORMS_ACCESS_KEY }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_WELCOME_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_WELCOME_TEMPLATE_ID }}
       - run: npm run build
         env:
           VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_WEB3FORMS_ACCESS_KEY }}
