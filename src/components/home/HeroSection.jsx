@@ -20,7 +20,7 @@ export default function HeroSection() {
           <span
             className="font-flourish font-black text-[clamp(6rem,22vw,20rem)] leading-none tracking-tight"
             style={{
-              WebkitTextStroke: '2px rgba(255,110,180,0.28)',
+              WebkitTextStroke: '2px rgba(255,110,180,0.13)',
               color: 'transparent',
             }}
           >

@@ -1,6 +1,5 @@
 export default function ScienceTicker() {
   const items = [
-    '150+ ARTICLES REVIEWED',
     'PEER-REVIEWED FORMULAS',
     'CYCLE-SYNCED PRECISION',
     'CLINICALLY INFORMED',
