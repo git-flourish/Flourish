@@ -13,10 +13,10 @@ const phases = [
     days: "Days 1–7",
     color: "#FF6B6B",
     bgLight: "#FFF0F0",
-    icon: "🌑",
+    icon: "🩸",
     hormone: "Estrogen & progesterone at their lowest",
     mission: "Replenish, restore, reduce pain",
-    body: "During menstruation, the uterine lining sheds and key nutrients are lost. Iron, in particular, drops significantly with blood loss. Inflammation spikes, and the hormone-gut axis becomes sensitive. Our Drain formula is built on the clinical evidence for iron bisglycinate (high absorption, low GI side effects), magnesium glycinate (proven to reduce cramping and improve sleep quality), and omega-3 EPA/DHA (anti-inflammatory, mood-stabilising).",
+    body: "This is the phase most people just call their period. Your body lets go of the uterine lining it built over the last month, and to do that, the uterus contracts, which is what you feel as cramps. Your two main hormones, estrogen and progesterone, sit at their lowest of the whole cycle. You're also losing iron through bleeding, which is why this phase can leave you feeling tired and depleted.",
     studies: [
       { title: "Iron bisglycinate vs iron sulfate in menstrual blood loss", journal: "J Womens Health, 2022" },
       { title: "Magnesium supplementation for primary dysmenorrhea", journal: "Eur J Clin Nutr, 2023" },
@@ -30,10 +30,10 @@ const phases = [
     days: "Days 8–13",
     color: "#6DB589",
     bgLight: "#F0FAF3",
-    icon: "🌒",
+    icon: "🌿",
     hormone: "Estrogen climbing, FSH active",
     mission: "Amplify energy, support hormonal rise",
-    body: "The follicular phase is your body's spring. Estrogen begins rising, the follicle matures, and cognitive performance peaks. Our Rise formula capitalises on this receptive window — the B-vitamin complex supports the methylation pathways that regulate estrogen metabolism; CoQ10 enhances mitochondrial energy production; zinc supports follicular development. Ashwagandha (KSM-66®) reduces cortisol without sedating the natural energy surge.",
+    body: "After your period, estrogen starts rising and your body gets to work rebuilding the uterine lining for the month ahead. But coming out of your period, things don't switch on instantly, the early days can still feel sluggish before your energy builds. This is a building phase so your body is in high demand for the nutrients that fuel energy, focus, and tissue renewal. You might notice your cervical mucus increasing and becoming clear and stretchy, a sign that estrogen is climbing.",
     studies: [
       { title: "B-vitamin complex and estrogen metabolism in premenopausal women", journal: "Nutrients, 2023" },
       { title: "CoQ10 supplementation and mitochondrial function", journal: "Biofactors, 2022" },
@@ -44,13 +44,13 @@ const phases = [
   {
     name: "The Peak",
     phase: "Ovulatory",
-    days: "Days 14–21",
+    days: "Days 14–17",
     color: "#FF6EB4",
     bgLight: "#FFF0F8",
-    icon: "🌕",
+    icon: "☀️",
     hormone: "LH surge, peak estrogen, testosterone rise",
     mission: "Manage inflammation, sustain radiance",
-    body: "The LH surge triggers ovulation and a brief but significant inflammatory response. You feel your best — but oxidative stress is quietly rising. Our Peak formula targets this paradox: NAC (N-acetyl cysteine) replenishes glutathione — the body's master antioxidant; selenium and vitamin C work synergistically for cellular protection; Vitex agnus-castus (chaste tree berry) supports progesterone synthesis in preparation for the luteal phase.",
+    body: "This is the short, intense window when your body releases an egg, and to do it, your body is running at full output. You often feel your best here, even as your body works its hardest behind the scenes. Releasing an egg is a big metabolic event that generates oxidative stress. That's exactly when antioxidant support matters most: protecting your cells while they work their hardest, so you can flourish. You might notice a higher sex drive and a real surge in energy and confidence.",
     studies: [
       { title: "NAC and oxidative stress across the menstrual cycle", journal: "Oxid Med Cell Longev, 2022" },
       { title: "Vitex agnus-castus in hormone modulation", journal: "Planta Med, 2021" },
@@ -61,13 +61,13 @@ const phases = [
   {
     name: "The Crash",
     phase: "Luteal",
-    days: "Days 22–28",
+    days: "Days 18–28",
     color: "#A78BCA",
     bgLight: "#F5F0FA",
-    icon: "🌘",
+    icon: "☁️",
     hormone: "Progesterone rises then falls",
     mission: "Calm the storm, protect sleep, ease PMS",
-    body: "As progesterone drops in the late luteal phase, serotonin and GABA pathways are disrupted. This is the root of PMS — not weakness, but a predictable neurochemical shift. Magnesium L-threonate crosses the blood-brain barrier to directly support GABA receptor function; vitamin B6 (pyridoxal-5-phosphate form) is a clinical-grade PMS intervention with multiple RCT support; saffron extract (affron®) has demonstrated equivalence to low-dose SSRIs for premenstrual mood in double-blind trials.",
+    body: "The longest stretch in your cycle. Progesterone rises to prepare your body in case of pregnancy, then, if there's no pregnancy, both it and estrogen drop sharply just before your next period. That sudden hormonal withdrawal is what sets off the symptoms known as PMS. You might notice trouble sleeping, food cravings, breast tenderness, and shifts in mood.",
     studies: [
       { title: "Magnesium L-threonate and GABA modulation", journal: "Neuropharmacology, 2022" },
       { title: "Vitamin B6 (P5P) for premenstrual syndrome: RCT review", journal: "Cochrane Review, 2023" },
@@ -81,22 +81,22 @@ const principles = [
   {
     icon: FlaskConical,
     title: "Evidence First",
-    body: "Every ingredient in every formula is backed by peer-reviewed clinical data — not trend cycles, not marketing.",
+    body: "Every ingredient in each formula is researched and checked for synergy.",
   },
   {
     icon: Leaf,
     title: "Bioavailability by Design",
-    body: "We choose the forms of nutrients your body actually absorbs — bisglycinate chelates, methylated B-vitamins, water-soluble delivery.",
+    body: "Ingredients are chosen in their most absorbable format.",
   },
   {
     icon: Zap,
-    title: "Cycle Intelligence",
-    body: "Supplements timed to your phase don't just check nutrient boxes — they work with your body's natural hormonal architecture.",
+    title: "Cycle Synced",
+    body: "Each formula is exactly mapped to each phase in the natural hormonal cycle.",
   },
   {
     icon: Shield,
-    title: "Clean & Vegan",
-    body: "No fillers, no animal-derived gelatin capsules, no unnecessary additives. Cruelty-free certified. Ethically sourced.",
+    title: "Clean and Vegan",
+    body: "There are no animal derivatives in our product, no unnecessary additives and our ingredients are ethically sourced.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function Science() {
                 <span className="text-flamingo italic">of your cycle.</span>
               </h1>
               <p className="font-sans text-lg text-mulberry/60 leading-relaxed max-w-2xl">
-                We reviewed 150+ clinical trials, journals, and studies to build four
+                We reviewed clinical trials, journals, and studies to build four
                 formulas that match exactly what your body needs at each phase of your
                 28-day cycle. Here's the evidence.
               </p>
@@ -167,10 +167,10 @@ export default function Science() {
                 Four Formulas
               </p>
               <h2 className="font-flourish text-[clamp(2.5rem,6vw,5rem)] font-black text-cream leading-tight">
-                Phase-by-phase breakdown
+                The natural hormonal cycle explained
               </h2>
               <p className="mt-4 font-sans text-base text-cream/60 max-w-xl mx-auto">
-                Select a phase to explore the clinical rationale and key ingredients behind each formula.
+                Understand your cycle, phase by phase.
               </p>
             </ScrollReveal>
 
@@ -226,13 +226,10 @@ export default function Science() {
                     </div>
 
                     <p
-                      className="font-sans text-xs uppercase tracking-[0.2em] mb-2"
+                      className="font-sans text-xs uppercase tracking-[0.2em] mb-4"
                       style={{ color: phase.color }}
                     >
-                      Our mission this phase
-                    </p>
-                    <p className="font-flourish text-[clamp(1.4rem,3vw,2.2rem)] font-bold text-mulberry leading-snug mb-6">
-                      {phase.mission}
+                      This is whats happening in your body
                     </p>
 
                     <p className="font-sans text-sm text-mulberry/70 leading-relaxed">

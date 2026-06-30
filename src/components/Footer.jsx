@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Twitter } from 'lucide-react'
+import { Instagram, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -33,7 +33,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
         <p className="font-sans text-xs uppercase tracking-widest text-cream/60">
-          © {year} Flourish Health, Inc. All rights reserved.
+          © {year} Flourish Inc. All rights reserved.
         </p>
 
         <div className="flex items-center gap-8">
@@ -43,17 +43,14 @@ export default function Footer() {
           <Link to="/science" className="font-sans text-xs uppercase tracking-widest text-cream/70 hover:text-cream transition-colors">
             Our Science
           </Link>
-          <a href="#" className="font-sans text-xs uppercase tracking-widest text-cream/70 hover:text-cream transition-colors">
-            Privacy
-          </a>
-          <a href="#" className="font-sans text-xs uppercase tracking-widest text-cream/70 hover:text-cream transition-colors">
-            Terms
-          </a>
+          <Link to="/about" className="font-sans text-xs uppercase tracking-widest text-cream/70 hover:text-cream transition-colors">
+            About
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">
           <a
-            href="https://www.instagram.com/now_flourish/"
+            href="https://www.instagram.com/now_flourish"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram @now_flourish"
@@ -62,12 +59,13 @@ export default function Footer() {
             <Instagram size={18} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://www.linkedin.com/company/nowflourish"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn @nowflourish"
             className="text-cream/70 hover:text-cream transition-colors"
           >
-            <Twitter size={18} />
+            <Linkedin size={18} />
           </a>
         </div>
       </div>

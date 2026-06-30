@@ -21,13 +21,6 @@ const testimonials = [
   },
 ];
 
-const stats = [
-  { number: "+150", label: "Clinical articles reviewed" },
-  { number: "65%", label: "of women unsatisfied with current supplements" },
-  { number: "$165B", label: "Women's supplement market" },
-  { number: "4", label: "Cycle-specific formulas" },
-];
-
 export default function SocialProof() {
   return (
     <section className="py-24 md:py-32 bg-cream relative overflow-hidden">
@@ -37,30 +30,14 @@ export default function SocialProof() {
       />
 
       <div className="max-w-7xl mx-auto px-6">
-        {/* Stats row */}
-        <ScrollReveal>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 text-center">
-            {stats.map((s) => (
-              <div key={s.number} className="flex flex-col items-center">
-                <span className="font-flourish text-[clamp(2rem,5vw,4rem)] font-black text-flamingo leading-none">
-                  {s.number}
-                </span>
-                <span className="font-sans text-sm text-mulberry/60 mt-2 max-w-[140px] mx-auto leading-snug">
-                  {s.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </ScrollReveal>
-
         {/* Section header */}
         <ScrollReveal className="text-center mb-14">
           <p className="font-sans text-xs uppercase tracking-[0.3em] text-mulberry/50 mb-3">
             Early Community
           </p>
           <h2 className="font-flourish text-[clamp(2rem,5vw,4rem)] font-black text-mulberry">
-            Women are already{" "}
-            <span className="text-flamingo italic">flourishing.</span>
+            Women are ready to{" "}
+            <span className="text-flamingo italic">Flourish.</span>
           </h2>
         </ScrollReveal>
 

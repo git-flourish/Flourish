@@ -64,12 +64,11 @@ export default function PhaseSection() {
               The System
             </p>
             <h2 className="font-flourish text-[clamp(2.5rem,7vw,6rem)] font-black text-mulberry leading-tight">
-              Four phases.{" "}
-              <span className="text-flamingo">Four formulas.</span>
+              <span className="block">Four phases.</span>
+              <span className="block text-flamingo">Four formulas.</span>
             </h2>
-            <p className="mt-4 font-sans text-lg text-mulberry/60 max-w-xl mx-auto">No one supplement with one formula can cover all four phases.
-
-
+            <p className="mt-4 font-sans text-lg text-mulberry/60 max-w-xl mx-auto">
+              Each formula adjusted to each phase, so you can flourish
             </p>
           </ScrollReveal>
 

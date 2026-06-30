@@ -8,16 +8,19 @@ export const phases = [
     days: 'Days 1–7',
     color: '#FF6B6B',
     bgLight: '#FFF0F0',
-    emoji: '🌑',
+    emoji: '🩸',
     headline: 'Rest is not weakness.',
     homeBody:
-      'Your estrogen and progesterone hit their floor. We replenish iron, reduce inflammation, ease cramping, and lift brain fog — so you can honour this phase without losing yourself in it.',
+      "We support your body replenishing what's lost through bleeding, easing cramps and inflammation, and lifting the low energy and mood that can come with it.",
+    showHomeMissionLabel: true,
+    hideChips: true,
+    symptomsLabel: 'You might feel',
     symptoms: ['Cramping', 'Fatigue', 'Inflammation', 'Iron loss', 'Brain fog'],
     keyIngredients: ['Iron bisglycinate', 'Magnesium glycinate', 'Omega-3', 'Turmeric extract'],
     hormone: 'Estrogen & progesterone at their lowest',
     mission: 'Replenish, restore, reduce pain',
     scienceBody:
-      'During menstruation, the uterine lining sheds and key nutrients are lost. Iron, in particular, drops significantly with blood loss. Inflammation spikes, and the hormone-gut axis becomes sensitive. Our Drain formula is built on the clinical evidence for iron bisglycinate (high absorption, low GI side effects), magnesium glycinate (proven to reduce cramping and improve sleep quality), and omega-3 EPA/DHA (anti-inflammatory, mood-stabilising).',
+      "This is the phase most people just call their period. Your body lets go of the uterine lining it built over the last month, and to do that, the uterus contracts, which is what you feel as cramps. Your two main hormones, estrogen and progesterone, sit at their lowest of the whole cycle. You're also losing iron through bleeding, which is why this phase can leave you feeling tired and depleted.",
     studies: [
       { title: 'Iron bisglycinate vs iron sulfate in menstrual blood loss', journal: 'J Womens Health, 2022' },
       { title: 'Magnesium supplementation for primary dysmenorrhea', journal: 'Eur J Clin Nutr, 2023' },
@@ -32,16 +35,19 @@ export const phases = [
     days: 'Days 8–13',
     color: '#6DB589',
     bgLight: '#F0FAF3',
-    emoji: '🌒',
-    headline: 'Energy is climbing. Meet it.',
+    emoji: '🌿',
+    headline: 'Watch yourself rise',
     homeBody:
-      'Estrogen begins its ascent. This is your window for mental clarity and momentum. We support rising hormones with nutrients that amplify focus, mood, and physical vitality.',
+      'We support your body clearing the lingering fog, steadying skin and mood, and fuelling the rebuild as energy and drive come back online.',
+    showHomeMissionLabel: true,
+    hideChips: true,
+    symptomsLabel: 'You might feel',
     symptoms: ['Energy building', 'Estrogen climbing', 'Mental clarity'],
     keyIngredients: ['B-complex vitamins', 'Ashwagandha', 'CoQ10', 'Zinc'],
     hormone: 'Estrogen climbing, FSH active',
     mission: 'Amplify energy, support hormonal rise',
     scienceBody:
-      "The follicular phase is your body's spring. Estrogen begins rising, the follicle matures, and cognitive performance peaks. Our Rise formula capitalises on this receptive window — the B-vitamin complex supports the methylation pathways that regulate estrogen metabolism; CoQ10 enhances mitochondrial energy production; zinc supports follicular development. Ashwagandha (KSM-66®) reduces cortisol without sedating the natural energy surge.",
+      "After your period, estrogen starts rising and your body gets to work rebuilding the uterine lining for the month ahead. But coming out of your period, things don't switch on instantly, the early days can still feel sluggish before your energy builds. This is a building phase so your body is in high demand for the nutrients that fuel energy, focus, and tissue renewal. You might notice your cervical mucus increasing and becoming clear and stretchy, a sign that estrogen is climbing.",
     studies: [
       { title: 'B-vitamin complex and estrogen metabolism in premenopausal women', journal: 'Nutrients, 2023' },
       { title: 'CoQ10 supplementation and mitochondrial function', journal: 'Biofactors, 2022' },
@@ -51,21 +57,24 @@ export const phases = [
   },
   {
     name: 'The Peak',
-    sub: 'Ovulatory Phase · Days 14–21',
+    sub: 'Ovulatory Phase · Days 14–17',
     phase: 'Ovulatory',
-    days: 'Days 14–21',
+    days: 'Days 14–17',
     color: '#FF6EB4',
     bgLight: '#FFF0F8',
-    emoji: '🌕',
-    headline: 'You are luminous. Protect it.',
+    emoji: '☀️',
+    headline: 'Your time to shine',
     homeBody:
-      'LH surges, confidence peaks, and inflammation quietly rises. Our Peak formula manages oxidative stress while you channel your highest energy — keeping you radiant, not depleted.',
-    symptoms: ['High energy', 'Confidence', 'Inflammation', 'Sex drive'],
+      'We support your body sustaining that peak energy, supporting the work of ovulation itself.',
+    showHomeMissionLabel: true,
+    hideChips: true,
+    symptomsLabel: 'You might feel',
+    symptoms: [{ emphasis: 'High', text: 'sex drive' }],
     keyIngredients: ['Vitamin C', 'Selenium', 'Chaste tree berry', 'NAC'],
     hormone: 'LH surge, peak estrogen, testosterone rise',
     mission: 'Manage inflammation, sustain radiance',
     scienceBody:
-      "The LH surge triggers ovulation and a brief but significant inflammatory response. You feel your best — but oxidative stress is quietly rising. Our Peak formula targets this paradox: NAC (N-acetyl cysteine) replenishes glutathione — the body's master antioxidant; selenium and vitamin C work synergistically for cellular protection; Vitex agnus-castus (chaste tree berry) supports progesterone synthesis in preparation for the luteal phase.",
+      "This is the short, intense window when your body releases an egg, and to do it, your body is running at full output. You often feel your best here, even as your body works its hardest behind the scenes. Releasing an egg is a big metabolic event that generates oxidative stress. That's exactly when antioxidant support matters most: protecting your cells while they work their hardest, so you can flourish. You might notice a higher sex drive and a real surge in energy and confidence.",
     studies: [
       { title: 'NAC and oxidative stress across the menstrual cycle', journal: 'Oxid Med Cell Longev, 2022' },
       { title: 'Vitex agnus-castus in hormone modulation', journal: 'Planta Med, 2021' },
@@ -75,21 +84,24 @@ export const phases = [
   },
   {
     name: 'The Crash',
-    sub: 'Luteal Phase · Days 22–28',
+    sub: 'Luteal Phase · Days 18–28',
     phase: 'Luteal',
-    days: 'Days 22–28',
+    days: 'Days 18–28',
     color: '#A78BCA',
     bgLight: '#F5F0FA',
-    emoji: '🌘',
-    headline: 'Support before the storm.',
+    emoji: '☁️',
+    headline: 'Your time to shine',
     homeBody:
-      'Progesterone rises then falls. Mood swings, bloating, and sleep disruption are real — and preventable. Our Crash formula addresses the root hormonal shifts so you feel like yourself, even now.',
+      'We support your body in calming anxiety and mood swings, improving sleep, and easing bloating, cravings, and fatigue as hormones shift.',
+    showHomeMissionLabel: true,
+    hideChips: true,
+    symptomsLabel: 'You might feel',
     symptoms: ['Mood swings', 'Bloating', 'Anxiety', 'Sleep issues'],
     keyIngredients: ['Magnesium L-threonate', 'Vitamin B6', 'Saffron extract', 'Passionflower'],
     hormone: 'Progesterone rises then falls',
     mission: 'Calm the storm, protect sleep, ease PMS',
     scienceBody:
-      'As progesterone drops in the late luteal phase, serotonin and GABA pathways are disrupted. This is the root of PMS — not weakness, but a predictable neurochemical shift. Magnesium L-threonate crosses the blood-brain barrier to directly support GABA receptor function; vitamin B6 (pyridoxal-5-phosphate form) is a clinical-grade PMS intervention with multiple RCT support; saffron extract (affron®) has demonstrated equivalence to low-dose SSRIs for premenstrual mood in double-blind trials.',
+      "The longest stretch in your cycle. Progesterone rises to prepare your body in case of pregnancy, then, if there's no pregnancy, both it and estrogen drop sharply just before your next period. That sudden hormonal withdrawal is what sets off the symptoms known as PMS. You might notice trouble sleeping, food cravings, breast tenderness, and shifts in mood.",
     studies: [
       { title: 'Magnesium L-threonate and GABA modulation', journal: 'Neuropharmacology, 2022' },
       { title: 'Vitamin B6 (P5P) for premenstrual syndrome: RCT review', journal: 'Cochrane Review, 2023' },
@@ -100,11 +112,11 @@ export const phases = [
 ]
 
 export const differentiators = [
-  { label: 'Women specific', flo: true, thorne: true, flourish: true },
-  { label: 'Cycle-synced formula', flo: true, thorne: false, flourish: true },
-  { label: 'Sequenced by phase', flo: false, thorne: false, flourish: true },
-  { label: 'Water soluble — Bioavailability', flo: false, thorne: false, flourish: true },
-  { label: 'Vegan, ethically sourced', flo: false, thorne: false, flourish: true },
+  { label: 'Women specific', others: true, flourish: true },
+  { label: 'Cycle-synced formula', others: true, flourish: true },
+  { label: 'Sequenced by phase', others: false, flourish: true },
+  { label: 'Water soluble — Bioavailability', others: false, flourish: true },
+  { label: 'Vegan, ethically sourced', others: false, flourish: true },
 ]
 
 /** Tab label: emoji + name (e.g. "🌑 The Drain"). */

@@ -3,6 +3,15 @@ import ScrollReveal from '../ScrollReveal.jsx'
 import WaitlistModal from '../WaitlistModal.jsx'
 import { phases } from '../../data/phaseData.js'
 
+function SymptomText({ symptom }) {
+  if (typeof symptom === 'string') return symptom
+  return (
+    <>
+      <em className="italic">{symptom.emphasis}</em> {symptom.text}
+    </>
+  )
+}
+
 export default function PhaseSection() {
   const [activePhase, setActivePhase] = useState(0)
   const [modalOpen, setModalOpen] = useState(false)
@@ -15,10 +24,11 @@ export default function PhaseSection() {
           <ScrollReveal className="text-center mb-16">
             <p className="font-sans text-xs uppercase tracking-[0.3em] text-mulberry/50 mb-3">The System</p>
             <h2 className="font-flourish text-[clamp(2.5rem,7vw,6rem)] font-black text-mulberry leading-tight">
-              Four phases. <span className="text-flamingo">Four formulas.</span>
+              <span className="block">Four phases.</span>
+              <span className="block text-flamingo">Four formulas.</span>
             </h2>
             <p className="mt-4 font-sans text-lg text-mulberry/60 max-w-xl mx-auto">
-              No one supplement with one formula can cover all four phases.
+              Each formula adjusted to each phase, so you can flourish
             </p>
           </ScrollReveal>
 
@@ -77,19 +87,29 @@ export default function PhaseSection() {
                     &ldquo;{phase.headline}&rdquo;
                   </p>
 
+                  {phase.showHomeMissionLabel && (
+                    <p
+                      className="font-sans text-xs uppercase tracking-[0.2em] mb-2"
+                      style={{ color: phase.color }}
+                    >
+                      Our mission this phase
+                    </p>
+                  )}
                   <p className="font-sans text-base text-mulberry/70 leading-relaxed mb-8">{phase.homeBody}</p>
 
-                  <div className="flex flex-wrap gap-2">
-                    {phase.symptoms.map((s) => (
-                      <span
-                        key={s}
-                        className="font-sans text-xs font-medium px-3 py-1 rounded-full"
-                        style={{ background: `${phase.color}20`, color: phase.color }}
-                      >
-                        {s}
-                      </span>
-                    ))}
-                  </div>
+                  {!phase.hideChips && (
+                    <div className="flex flex-wrap gap-2">
+                      {phase.symptoms.map((s) => (
+                        <span
+                          key={s}
+                          className="font-sans text-xs font-medium px-3 py-1 rounded-full"
+                          style={{ background: `${phase.color}20`, color: phase.color }}
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <div
@@ -97,18 +117,20 @@ export default function PhaseSection() {
                   style={{ background: `${phase.color}15` }}
                 >
                   <p className="font-sans text-xs uppercase tracking-[0.2em] text-mulberry/50 mb-6">
-                    Symptomes addressed
+                    {phase.symptomsLabel ?? 'Symptomes addressed'}
                   </p>
                   <div className="space-y-4">
                     {phase.symptoms.map((s, i) => (
-                      <div key={s} className="flex items-center gap-4">
+                      <div key={typeof s === 'string' ? s : `${s.emphasis}-${s.text}`} className="flex items-center gap-4">
                         <div
                           className="w-8 h-8 rounded-full flex items-center justify-center font-sans text-xs font-bold text-cream"
                           style={{ background: phase.color }}
                         >
                           {i + 1}
                         </div>
-                        <span className="font-sans text-base font-medium text-mulberry">{s}</span>
+                        <span className="font-sans text-base font-medium text-mulberry">
+                          <SymptomText symptom={s} />
+                        </span>
                       </div>
                     ))}
                   </div>
