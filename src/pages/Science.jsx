@@ -126,72 +126,30 @@ export default function Science() {
 
             <ScrollReveal delay={0.15}>
               <div className="rounded-3xl overflow-hidden" style={{ background: phase.bgLight }}>
-                <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="p-8 md:p-12 lg:p-16">
-                    <div className="flex items-center gap-3 mb-6">
-                      <span className="text-3xl">{phase.emoji}</span>
-                      <div>
-                        <h3 className="font-flourish text-2xl font-bold" style={{ color: phase.color }}>
-                          {phase.name}
-                        </h3>
-                        <p className="font-sans text-xs uppercase tracking-widest text-mulberry/50">
-                          {phase.phase} · {phase.days}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="border-l-4 pl-6 mb-8" style={{ borderColor: phase.color }}>
-                      <p className="font-flourish text-xl font-bold italic text-mulberry/80">
-                        Hormone status: {phase.hormone}
+                <div className="p-8 md:p-12 lg:p-16">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-3xl">{phase.emoji}</span>
+                    <div>
+                      <h3 className="font-flourish text-2xl font-bold" style={{ color: phase.color }}>
+                        {phase.name}
+                      </h3>
+                      <p className="font-sans text-xs uppercase tracking-widest text-mulberry/50">
+                        {phase.phase} · {phase.days}
                       </p>
                     </div>
-                    <p
-                      className="font-sans text-xs uppercase tracking-[0.2em] mb-4"
-                      style={{ color: phase.color }}
-                    >
-                      This is whats happening in your body
+                  </div>
+                  <div className="border-l-4 pl-6 mb-8" style={{ borderColor: phase.color }}>
+                    <p className="font-flourish text-xl font-bold italic text-mulberry/80">
+                      Hormone status: {phase.hormone}
                     </p>
-                    <p className="font-sans text-sm text-mulberry/70 leading-relaxed">{phase.scienceBody}</p>
                   </div>
-                  <div
-                    className="p-8 md:p-12 lg:p-16 flex flex-col gap-10"
-                    style={{ background: `${phase.color}12` }}
+                  <p
+                    className="font-sans text-xs uppercase tracking-[0.2em] mb-4"
+                    style={{ color: phase.color }}
                   >
-                    <div>
-                      <p className="font-sans text-xs uppercase tracking-[0.2em] text-mulberry/50 mb-4">
-                        Key Ingredients
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {phase.ingredients.map((ing) => (
-                          <span
-                            key={ing}
-                            className="font-sans text-xs font-semibold px-3 py-1.5 rounded-full"
-                            style={{ background: `${phase.color}20`, color: phase.color }}
-                          >
-                            {ing}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-sans text-xs uppercase tracking-[0.2em] text-mulberry/50 mb-4">
-                        Supporting Research
-                      </p>
-                      <div className="space-y-4">
-                        {phase.studies.map((s) => (
-                          <div
-                            key={s.title}
-                            className="rounded-xl p-4"
-                            style={{ background: 'rgba(250,240,230,0.7)' }}
-                          >
-                            <p className="font-sans text-sm font-medium text-mulberry leading-snug mb-1">
-                              {s.title}
-                            </p>
-                            <p className="font-sans text-xs text-mulberry/50 italic">{s.journal}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                    This is whats happening in your body
+                  </p>
+                  <p className="font-sans text-sm text-mulberry/70 leading-relaxed">{phase.scienceBody}</p>
                 </div>
               </div>
             </ScrollReveal>

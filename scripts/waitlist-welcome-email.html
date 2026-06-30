@@ -1,0 +1,84 @@
+<!--
+  EmailJS dashboard setup (emailjs.com):
+  1. Email Services → connect Gmail/SMTP for info@now-flourish.com
+  2. Email Templates → waitlist_welcome:
+     To Email: {{to_email}} | From Name: Flourish | Reply To: info@now-flourish.com
+     Subject: You're on the Flourish waitlist
+     Body: paste HTML below (uses {{first_name}})
+  3. Account → API Keys → Public Key → VITE_EMAILJS_PUBLIC_KEY
+  4. Security → Domain whitelist: git-flourish.github.io, localhost
+  Env: VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_WELCOME_TEMPLATE_ID
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flourish waitlist welcome</title>
+</head>
+<body style="margin:0;padding:0;background-color:#FAF0E6;font-family:Helvetica,Arial,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color:#FAF0E6;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px;border-radius:16px;overflow:hidden;">
+
+          <tr>
+            <td style="background-color:#FF6EB4;padding:40px 32px;text-align:center;">
+              <p style="margin:0 0 8px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(250,240,230,0.85);">
+                Early Access
+              </p>
+              <h1 style="margin:0;font-family:Georgia,serif;font-size:32px;font-weight:900;color:#FAF0E6;">
+                FLOURISH
+              </h1>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:40px 32px;background-color:#FFFFFF;">
+              <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#4A354A;">
+                Hi {{first_name}},
+              </p>
+              <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#4A354A;">
+                Thank you for joining the Flourish community and following our journey!
+              </p>
+              <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#4A354A;">
+                You'll be receiving updates every month on how the community and product are evolving.
+              </p>
+              <p style="margin:0 0 12px;font-size:16px;line-height:1.6;color:#4A354A;">
+                Don't forget to follow along on
+                <a href="https://www.instagram.com/now_flourish" style="color:#FF6EB4;font-weight:600;text-decoration:none;">Instagram</a>
+                and
+                <a href="https://www.linkedin.com/company/nowflourish" style="color:#FF6EB4;font-weight:600;text-decoration:none;">LinkedIn</a>.
+              </p>
+              <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#4A354A;">
+                We'll be posting about the science of the cycle, what's actually happening in each phase, and why it matters, so you'll know your body a little better before the box even arrives.
+              </p>
+              <p style="margin:0 0 28px;font-size:16px;line-height:1.6;color:#4A354A;">
+                Once we are ready to launch, you'll be the first to know and you'll get an early subscriber discount.
+              </p>
+              <p style="margin:0;font-size:16px;line-height:1.6;color:#4A354A;">
+                — The Flourish team 🌸
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:24px 32px 32px;text-align:center;background-color:#FAF0E6;">
+              <p style="margin:0 0 8px;font-size:11px;line-height:1.6;color:rgba(74,53,74,0.55);">
+                To stop receiving emails, reply to this message with the word <strong>Unsubscribe</strong>.
+              </p>
+              <p style="margin:0 0 8px;font-size:11px;line-height:1.6;color:rgba(74,53,74,0.55);">
+                Flourish Inc. · info@now-flourish.com
+              </p>
+              <p style="margin:0;font-size:11px;color:rgba(74,53,74,0.4);">
+                © 2026 Flourish Inc.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

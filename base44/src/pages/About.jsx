@@ -20,21 +20,31 @@ export default function About() {
 
             <div className="space-y-6 font-sans text-base md:text-lg text-mulberry/75 leading-relaxed">
               <p>
-                Women&apos;s health research gets a fraction of the funding men&apos;s health does,
-                and supplements never caught up either. The industry still sells one static formula
-                for a body that changes every single week.
+                Flourish was born from a fact that frustrated all of us: women in health have been
+                misstudied for decades. Most products in the supplement market were built for men,
+                then handed to women as if our bodies worked the same way.
               </p>
               <p>
-                We&apos;re a team of women who got tired of guessing. Tired of the vitamin bottle
-                graveyard. Tired of being told to &apos;just listen to our bodies&apos; while every
-                product on the shelf ignored what our bodies were actually doing.
+                When we came together to build something meaningful, we realized this wasn&apos;t
+                just a market gap, it was something we had all lived. Each of us felt unwell at
+                different points throughout our cycles, and instead of ignoring it the way the
+                industry always had, we decided to actually look at it.
               </p>
               <p>
-                So we built the thing we wished existed: nutrition that moves with the cycle instead
-                of against it. Grounded in clinical research, not wellness trends.
+                Women go through four distinct phases, and we feel every one of them. So instead of
+                building one more generic formula, we built four, one for each phase, designed
+                around what our bodies actually need in that moment.
+              </p>
+              <p>
+                Flourish is the supplement we always wished existed. One made for the body we
+                actually have, not the one the industry assumed we had.
+              </p>
+              <p>
+                This isn&apos;t just a product to us. It&apos;s the thing we needed and couldn&apos;t
+                find, made real.
               </p>
               <p className="font-semibold text-mulberry">
-                Designed by women for women who live it every month.
+                Built by women, for women.
               </p>
             </div>
           </ScrollReveal>

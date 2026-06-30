@@ -41,8 +41,8 @@ const fsh = {
 export const hormones = [
   { key: 'estrogen', label: 'Estrogen', color: '#FF6EB4', width: 2.5, dash: null, values: estrogen },
   { key: 'progesterone', label: 'Progesterone', color: '#A78BCA', width: 2.5, dash: null, values: progesterone },
-  { key: 'lh', label: 'LH', color: '#4A354A', width: 2, dash: null, values: lh },
-  { key: 'fsh', label: 'FSH', color: '#6DB589', width: 2, dash: '6 4', values: fsh },
+  { key: 'lh', label: 'LH', color: '#D4A03A', width: 2, dash: null, values: lh },
+  { key: 'fsh', label: 'FSH', color: '#6DB589', width: 2, dash: null, values: fsh },
 ]
 
 export const dayMarkers = [7, 14, 21, 28]

@@ -126,7 +126,7 @@ export default function HormoneCycleChart({ className = '', animate = true }) {
           />
         </g>
 
-        <circle cx={dayX(14)} cy={lhPeakY} r={5} fill="#4A354A" opacity={0.9} filter="url(#lh-glow)" />
+        <circle cx={dayX(14)} cy={lhPeakY} r={5} fill={hormones.find((h) => h.key === 'lh').color} opacity={0.9} filter="url(#lh-glow)" />
 
         <line
           x1={dayX(activeDay)}
@@ -185,16 +185,16 @@ export default function HormoneCycleChart({ className = '', animate = true }) {
         {hormones.map((h) => (
           <span
             key={h.key}
-            className="font-sans text-xs font-semibold inline-flex items-center"
-            style={{ color: h.color }}
+            className="font-sans text-xs font-semibold text-mulberry inline-flex items-center"
           >
             <span
-              className="inline-block w-3 mr-1.5"
+              className="inline-block w-3 mr-1.5 shrink-0"
               style={{
                 height: 2,
                 background: h.dash ? 'transparent' : h.color,
                 borderTop: h.dash ? `2px dashed ${h.color}` : undefined,
               }}
+              aria-hidden
             />
             {h.label}
           </span>
