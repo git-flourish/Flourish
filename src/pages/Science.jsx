@@ -218,14 +218,10 @@ export default function Science() {
 
         <section className="py-20 bg-flamingo relative overflow-hidden">
           <div className="absolute w-[400px] h-[400px] rounded-full border border-cream/10 -bottom-20 -left-20 pointer-events-none" />
-          <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
+          <div className="max-w-3xl lg:max-w-5xl mx-auto px-6 text-center relative z-10">
             <ScrollReveal>
-              <h2 className="font-flourish text-[clamp(2.5rem,7vw,6rem)] font-black text-cream leading-tight mb-6">
-                Science-backed.
-                <br />
-                Cycle-synced.
-                <br />
-                Finally.
+              <h2 className="font-flourish text-[clamp(2rem,5vw,3.5rem)] lg:text-[clamp(2rem,2.8vw,3.25rem)] font-black text-cream leading-tight mb-6 hyphens-none lg:whitespace-nowrap">
+                Science-backed. Cycle-synced. Finally.
               </h2>
               <button
                 type="button"
