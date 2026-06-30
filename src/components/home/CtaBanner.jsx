@@ -17,9 +17,9 @@ export default function CtaBanner() {
             <p className="font-sans text-xs uppercase tracking-[0.3em] text-cream/60 mb-5">
               Coming Soon
             </p>
-            <h2 className="font-flourish text-[clamp(2.5rem,8vw,7rem)] font-black text-cream leading-tight mb-6">
-              Women finally get<br />
-              what they need.
+            <h2 className="font-flourish text-[clamp(1.75rem,8vw,7rem)] font-black text-cream leading-tight mb-6 hyphens-none">
+              <span className="block whitespace-nowrap">Women finally get</span>
+              <span className="block whitespace-nowrap">what they need.</span>
             </h2>
             <p className="font-sans text-base md:text-lg text-cream/80 leading-relaxed max-w-lg mx-auto mb-10">
               Be among the first to experience Flourish. Early access members
