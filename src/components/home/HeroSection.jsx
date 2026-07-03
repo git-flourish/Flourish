@@ -33,7 +33,7 @@ export default function HeroSection() {
             className="font-sans text-xs tracking-wide text-mulberry/60 mb-6 fade-up"
             style={{ animationDelay: '0.1s' }}
           >
-            The first cycle-synced supplement
+            THE FIRST CYCLE-SYNCED SUPPLEMENT
           </p>
 
           <h1

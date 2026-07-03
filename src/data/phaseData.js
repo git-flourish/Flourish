@@ -42,9 +42,9 @@ export const phases = [
     showHomeMissionLabel: true,
     hideChips: true,
     symptomsLabel: 'You might feel',
-    symptoms: ['Energy building', 'Estrogen climbing', 'Mental clarity'],
+    symptoms: ['Energy building', 'Estrogen climbing', 'Mental clarity', 'Light headed', 'Dizzy'],
     keyIngredients: ['B-complex vitamins', 'Ashwagandha', 'CoQ10', 'Zinc'],
-    hormone: 'Estrogen climbing, FSH active',
+    hormone: 'Estrogen rising to its peak',
     mission: 'Amplify energy, support hormonal rise',
     scienceBody:
       "After your period, estrogen starts rising and your body gets to work rebuilding the uterine lining for the month ahead. But coming out of your period, things don't switch on instantly, the early days can still feel sluggish before your energy builds. This is a building phase so your body is in high demand for the nutrients that fuel energy, focus, and tissue renewal. You might notice your cervical mucus increasing and becoming clear and stretchy, a sign that estrogen is climbing.",
@@ -63,15 +63,16 @@ export const phases = [
     color: '#FF6EB4',
     bgLight: '#FFF0F8',
     emoji: '☀️',
+    badgeIcon: '♥',
     headline: 'Your time to shine',
     homeBody:
       'We support your body sustaining that peak energy, supporting the work of ovulation itself.',
     showHomeMissionLabel: true,
     hideChips: true,
     symptomsLabel: 'You might feel',
-    symptoms: [{ emphasis: 'High', text: 'sex drive' }],
+    symptoms: [{ emphasis: 'High', text: 'sex drive' }, 'High energy', 'Inflamation'],
     keyIngredients: ['Vitamin C', 'Selenium', 'Chaste tree berry', 'NAC'],
-    hormone: 'LH surge, peak estrogen, testosterone rise',
+    hormone: 'LH surge, estrogen falling from its pre-ovulation peak',
     mission: 'Manage inflammation, sustain radiance',
     scienceBody:
       "This is the short, intense window when your body releases an egg, and to do it, your body is running at full output. You often feel your best here, even as your body works its hardest behind the scenes. Releasing an egg is a big metabolic event that generates oxidative stress. That's exactly when antioxidant support matters most: protecting your cells while they work their hardest, so you can flourish. You might notice a higher sex drive and a real surge in energy and confidence.",
@@ -90,7 +91,7 @@ export const phases = [
     color: '#A78BCA',
     bgLight: '#F5F0FA',
     emoji: '☁️',
-    headline: 'Your time to shine',
+    headline: 'Steady before the shift',
     homeBody:
       'We support your body in calming anxiety and mood swings, improving sleep, and easing bloating, cravings, and fatigue as hormones shift.',
     showHomeMissionLabel: true,
@@ -119,9 +120,9 @@ export const differentiators = [
   { label: 'Vegan, ethically sourced', others: false, flourish: true },
 ]
 
-/** Tab label: emoji + name (e.g. "🌑 The Drain"). */
+/** Tab label: preferred icon + name (e.g. "🩸 The Drain"). */
 export function phaseTabLabel(phase) {
-  return `${phase.emoji} ${phase.name}`
+  return `${phase.badgeIcon ?? phase.emoji} ${phase.name}`
 }
 
 // ponytail: assert-based sanity check; upgrade path: dedicated test file when consumers wire in
@@ -130,6 +131,6 @@ if (import.meta.env?.DEV) {
   console.assert(differentiators.length === 5, 'expected 5 differentiators')
   phases.forEach((p) => {
     console.assert(p.emoji && p.name && p.color && p.bgLight, `phase missing core fields: ${p.name}`)
-    console.assert(phaseTabLabel(p).startsWith(p.emoji), `tab label mismatch: ${p.name}`)
+    console.assert(phaseTabLabel(p).startsWith(p.badgeIcon ?? p.emoji), `tab label mismatch: ${p.name}`)
   })
 }

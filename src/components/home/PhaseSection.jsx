@@ -7,7 +7,7 @@ function SymptomText({ symptom }) {
   if (typeof symptom === 'string') return symptom
   return (
     <>
-      <em className="italic">{symptom.emphasis}</em> {symptom.text}
+      <span>{symptom.emphasis}</span> {symptom.text}
     </>
   )
 }
@@ -55,7 +55,7 @@ export default function PhaseSection() {
                         }
                   }
                 >
-                  {p.emoji} {p.name}
+                  {p.badgeIcon ?? p.emoji} {p.name}
                 </button>
               ))}
             </div>
@@ -71,9 +71,9 @@ export default function PhaseSection() {
                   <div className="flex items-center gap-3 mb-6">
                     <div
                       className="w-10 h-10 rounded-full flex items-center justify-center text-xl"
-                      style={{ background: `${phase.color}20` }}
+                      style={{ background: `${phase.color}20`, color: phase.color }}
                     >
-                      {phase.emoji}
+                      {phase.badgeIcon ?? phase.emoji}
                     </div>
                     <div>
                       <h3 className="font-flourish text-2xl font-bold" style={{ color: phase.color }}>

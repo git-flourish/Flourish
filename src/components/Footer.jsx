@@ -41,7 +41,7 @@ export default function Footer() {
             Home
           </Link>
           <Link to="/science" className="font-sans text-xs uppercase tracking-widest text-cream/70 hover:text-cream transition-colors">
-            Our Science
+            The Science
           </Link>
           <Link to="/about" className="font-sans text-xs uppercase tracking-widest text-cream/70 hover:text-cream transition-colors">
             About

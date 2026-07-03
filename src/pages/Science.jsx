@@ -55,7 +55,7 @@ export default function Science() {
               </h1>
               <p className="font-sans text-lg text-mulberry/60 leading-relaxed max-w-2xl">
                 We reviewed clinical trials, journals, and studies to build four formulas that match
-                exactly what your body needs at each phase of your 28-day cycle. Here&apos;s the evidence.
+                exactly what your body needs at each phase of your cycle. Here&apos;s the evidence.
               </p>
             </ScrollReveal>
           </div>
@@ -118,7 +118,7 @@ export default function Science() {
                         : { background: 'transparent', borderColor: `${p.color}50`, color: p.color }
                     }
                   >
-                    {p.emoji} {p.name}
+                    {p.badgeIcon ?? p.emoji} {p.name}
                   </button>
                 ))}
               </div>
@@ -128,7 +128,9 @@ export default function Science() {
               <div className="rounded-3xl overflow-hidden" style={{ background: phase.bgLight }}>
                 <div className="p-8 md:p-12 lg:p-16">
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="text-3xl">{phase.emoji}</span>
+                    <span className="text-3xl" style={{ color: phase.color }}>
+                      {phase.badgeIcon ?? phase.emoji}
+                    </span>
                     <div>
                       <h3 className="font-flourish text-2xl font-bold" style={{ color: phase.color }}>
                         {phase.name}
@@ -160,10 +162,10 @@ export default function Science() {
           <div className="max-w-5xl mx-auto px-6">
             <ScrollReveal className="text-center mb-16">
               <h2 className="font-flourish text-[clamp(2rem,5vw,4rem)] font-black text-mulberry">
-                The 28-day journey
+                The Cycle Journey
               </h2>
               <p className="mt-4 font-sans text-base text-mulberry/60 max-w-lg mx-auto">
-                No one supplement with one formula can cover for all four phases — and now, none has to.
+                Your body moves through a natural hormonal cycle.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
