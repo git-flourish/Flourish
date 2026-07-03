@@ -62,7 +62,7 @@ try {
   await ready
   const browser = await chromium.launch()
   const page = await browser.newPage()
-  await page.goto('http://localhost:5174/Flourish/?waitlist=1')
+  await page.goto('http://localhost:5174/?waitlist=1')
   if (testName) {
     await page.getByPlaceholder('First name (optional)').fill(testName)
   }
