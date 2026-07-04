@@ -6,5 +6,6 @@ dist-ssr
 *.local
 .vite
 .firebase
+firebase-service-account.json
 .DS_Store
 *.log
