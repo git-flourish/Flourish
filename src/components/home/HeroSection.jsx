@@ -28,20 +28,22 @@ export default function HeroSection() {
           </span>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center w-full">
           <p
-            className="font-sans text-xs tracking-wide text-mulberry/60 mb-6 fade-up"
+            className="font-sans text-xs tracking-wide text-mulberry/60 mb-6 fade-up px-6"
             style={{ animationDelay: '0.1s' }}
           >
             THE FIRST CYCLE-SYNCED SUPPLEMENT
           </p>
 
           <h1
-            className="flourish-wordmark text-[clamp(5rem,16vw,14rem)] leading-none mb-6 fade-up"
+            className="flourish-wordmark text-[clamp(5rem,16vw,14rem)] leading-none mb-6 fade-up whitespace-nowrap"
             style={{ animationDelay: '0.2s' }}
           >
             Flourish
           </h1>
+
+          <div className="px-6 max-w-5xl mx-auto">
 
           <p
             className="font-flourish text-[clamp(1.3rem,3vw,2.5rem)] font-bold text-mulberry leading-snug mb-4 fade-up"
@@ -93,6 +95,7 @@ export default function HeroSection() {
               <span className="text-flamingo font-semibold">1,200+ women</span>
               <span className="text-mulberry/60"> already on the waitlist</span>
             </p>
+          </div>
           </div>
         </div>
 
