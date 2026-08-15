@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <Link
             to="/"
-            className="font-flourish text-2xl font-black text-flamingo tracking-tight hover:opacity-80 transition-opacity"
+            className="font-flourish text-2xl font-bold text-flamingo tracking-tight leading-none flex items-center translate-y-[0.15em] hover:opacity-80 transition-opacity"
           >
             Flourish
           </Link>

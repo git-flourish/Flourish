@@ -48,7 +48,7 @@ export default function Science() {
               <p className="font-sans text-xs uppercase tracking-[0.3em] text-mulberry/50 mb-4">
                 The Flourish Standard
               </p>
-              <h1 className="font-flourish text-[clamp(3rem,9vw,8rem)] font-black text-mulberry leading-tight mb-6">
+              <h1 className="font-flourish text-[clamp(2.5rem,7vw,5.5rem)] font-black text-mulberry leading-tight mb-6">
                 The science
                 <br />
                 <span className="text-flamingo italic">of your cycle.</span>
@@ -66,7 +66,7 @@ export default function Science() {
         <section className="py-24 bg-cream">
           <div className="max-w-7xl mx-auto px-6">
             <ScrollReveal className="text-center mb-16">
-              <h2 className="font-flourish text-[clamp(2rem,5vw,4rem)] font-black text-mulberry">
+              <h2 className="font-flourish text-[clamp(1.75rem,4vw,3rem)] font-black text-mulberry">
                 Our scientific principles
               </h2>
             </ScrollReveal>
@@ -91,7 +91,7 @@ export default function Science() {
           <div className="max-w-7xl mx-auto px-6">
             <ScrollReveal className="text-center mb-14">
               <p className="font-sans text-xs uppercase tracking-[0.3em] text-flamingo mb-3">Four Formulas</p>
-              <h2 className="font-flourish text-[clamp(2.5rem,6vw,5rem)] font-black text-cream leading-tight">
+              <h2 className="font-flourish text-[clamp(2rem,5vw,3.75rem)] font-black text-cream leading-tight">
                 The natural hormonal cycle explained
               </h2>
               <p className="mt-4 font-sans text-base text-cream/60 max-w-xl mx-auto">

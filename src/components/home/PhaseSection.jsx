@@ -23,7 +23,7 @@ export default function PhaseSection() {
         <div className="max-w-7xl mx-auto px-6">
           <ScrollReveal className="text-center mb-16">
             <p className="font-sans text-xs uppercase tracking-[0.3em] text-mulberry/50 mb-3">The System</p>
-            <h2 className="font-flourish text-[clamp(2.5rem,7vw,6rem)] font-black text-mulberry leading-tight">
+            <h2 className="font-flourish text-[clamp(2rem,5.5vw,4.5rem)] font-black text-mulberry leading-tight">
               <span className="block">Four phases.</span>
               <span className="block text-flamingo">Four formulas.</span>
             </h2>
