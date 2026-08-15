@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const { pathname } = location
   const navLink = (path) =>
-    `nav-link font-sans text-sm font-medium tracking-wide transition-colors ${
+    `nav-link font-sans text-base font-medium tracking-wide transition-colors ${
       pathname === path ? 'text-flamingo' : 'text-mulberry/70 hover:text-mulberry'
     }`
 

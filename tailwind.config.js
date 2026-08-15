@@ -31,9 +31,9 @@ module.exports = {
         "flamingo-light": "#FFD6ED",
       },
       fontFamily: {
-        flourish: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Plus Jakarta Sans", "ui-sans-serif", "system-ui", "sans-serif"],
-        serif: ["Playfair Display", "Georgia", "serif"],
+        flourish: ["Corben", "Georgia", "serif"],
+        sans: ["Crimson Pro", "Georgia", "serif"],
+        serif: ["Corben", "Georgia", "serif"],
       },
       keyframes: {
         "accordion-down": { from: { height: "0" }, to: { height: "var(--radix-accordion-content-height)" } },

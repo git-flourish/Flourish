@@ -5,6 +5,7 @@ import HeroSection from '../components/home/HeroSection.jsx'
 import PhaseSection from '../components/home/PhaseSection.jsx'
 import WhySection from '../components/home/WhySection.jsx'
 import SocialProof from '../components/home/SocialProof.jsx'
+import FaqSection from '../components/home/FaqSection.jsx'
 import CtaBanner from '../components/home/CtaBanner.jsx'
 import ScienceTicker from '../components/home/ScienceTicker.jsx'
 import WaitlistModal from '../components/WaitlistModal.jsx'
@@ -22,6 +23,7 @@ export default function Home() {
       <PhaseSection />
       <WhySection />
       <SocialProof />
+      <FaqSection />
       <CtaBanner />
       <Footer />
       <WaitlistModal

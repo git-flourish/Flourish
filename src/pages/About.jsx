@@ -2,6 +2,12 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
 
+const team = [
+  { name: 'Liora Kubala', role: 'CEO and Head of Formulation', photo: '/team/liora-kubala.png' },
+  { name: 'Ana Paula Albin', role: 'CMO', photo: '/team/ana-paula-albin.png' },
+  { name: 'Melina Lopatin', role: 'COO', photo: '/team/melina-lopatin.png' },
+]
+
 export default function About() {
   return (
     <div className="min-h-screen bg-cream">
@@ -48,6 +54,35 @@ export default function About() {
               </p>
             </div>
           </ScrollReveal>
+        </div>
+      </section>
+
+      <section id="team" className="py-24 md:py-32 bg-flamingo-light">
+        <div className="max-w-5xl mx-auto px-6">
+          <ScrollReveal className="text-center mb-14">
+            <p className="font-sans text-xs uppercase tracking-[0.3em] text-mulberry/50 mb-3">
+              The People
+            </p>
+            <h2 className="font-flourish text-[clamp(2rem,5vw,4rem)] font-bold text-mulberry">
+              The <span className="text-flamingo italic">team.</span>
+            </h2>
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            {team.map((member, i) => (
+              <ScrollReveal key={member.name} delay={i * 0.1}>
+                <div className="flex flex-col items-center text-center">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover grayscale mb-5"
+                  />
+                  <p className="font-flourish font-bold text-lg md:text-xl text-lavender">{member.name}</p>
+                  <p className="font-sans text-sm text-lavender/80 mt-1">{member.role}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 

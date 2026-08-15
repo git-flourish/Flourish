@@ -160,7 +160,7 @@ export default function HormoneCycleChart({ className = '', animate = true }) {
             y={PAD.top + plotH + 18}
             textAnchor="middle"
             className="fill-mulberry/40 pointer-events-none"
-            style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11 }}
+            style={{ fontFamily: 'Crimson Pro, Georgia, serif', fontSize: 11 }}
           >
             Day {day}
           </text>
@@ -174,7 +174,7 @@ export default function HormoneCycleChart({ className = '', animate = true }) {
             textAnchor="middle"
             fill={phase.color}
             className="pointer-events-none"
-            style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 14, fontWeight: 700 }}
+            style={{ fontFamily: 'Corben, Georgia, serif', fontSize: 14, fontWeight: 700 }}
           >
             {phase.name}
           </text>

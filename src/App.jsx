@@ -17,7 +17,6 @@ function AuthenticatedApp() {
       <div className="fixed inset-0 flex items-center justify-center bg-cream">
         <div
           className="font-flourish text-4xl font-black text-flamingo"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           flourish
         </div>
