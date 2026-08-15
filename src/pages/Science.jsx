@@ -178,9 +178,9 @@ export default function Science() {
 
         <section className="py-20 bg-flamingo relative overflow-hidden">
           <div className="absolute w-[400px] h-[400px] rounded-full border border-cream/10 -bottom-20 -left-20 pointer-events-none" />
-          <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
+          <div className="text-center relative z-10 w-full">
             <ScrollReveal>
-              <h2 className="font-flourish text-[clamp(1.75rem,7vw,6rem)] font-black text-cream leading-tight mb-6 hyphens-none">
+              <h2 className="font-flourish text-[clamp(1.75rem,6vw,4.5rem)] font-black text-cream leading-tight mb-6 hyphens-none">
                 <span className="block whitespace-nowrap">Science-backed.</span>
                 <span className="block whitespace-nowrap">Cycle-synced.</span>
                 <span className="block whitespace-nowrap">Finally.</span>

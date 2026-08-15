@@ -12,15 +12,16 @@ export default function CtaBanner() {
         <div className="absolute w-[600px] h-[600px] rounded-full border border-cream/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
         <div className="absolute w-[900px] h-[900px] rounded-full border border-cream/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <div className="text-center relative z-10 w-full">
           <ScrollReveal>
             <p className="font-sans text-xs uppercase tracking-[0.3em] text-cream/60 mb-5">
               Coming Soon
             </p>
-            <h2 className="font-flourish text-[clamp(1.75rem,8vw,7rem)] font-black text-cream leading-tight mb-6 hyphens-none">
+            <h2 className="font-flourish text-[clamp(1.75rem,7vw,5.5rem)] font-black text-cream leading-tight mb-6 hyphens-none">
               <span className="block whitespace-nowrap">Women finally get</span>
               <span className="block whitespace-nowrap">what they need.</span>
             </h2>
+            <div className="px-6 max-w-4xl mx-auto">
             <p className="font-sans text-base md:text-lg text-cream/80 leading-relaxed max-w-lg mx-auto mb-10">
               Be among the first to experience Flourish. Early access members
               get exclusive launch pricing and a free cycle guide.
@@ -38,6 +39,7 @@ export default function CtaBanner() {
             <p className="mt-6 font-sans text-xs text-cream/50 uppercase tracking-widest">
               Free to join · No credit card required
             </p>
+            </div>
           </ScrollReveal>
         </div>
       </section>
