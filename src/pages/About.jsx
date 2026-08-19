@@ -68,14 +68,14 @@ export default function About() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10 justify-items-center">
             {team.map((member, i) => (
-              <ScrollReveal key={member.name} delay={i * 0.1}>
+              <ScrollReveal key={member.name} delay={i * 0.1} className="w-full flex justify-center">
                 <div className="flex flex-col items-center text-center">
                   <img
-                    src={member.photo}
+                    src={`${member.photo}?v=3`}
                     alt={member.name}
-                    className="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover grayscale mb-5"
+                    className="block w-44 h-44 md:w-52 md:h-52 rounded-full object-cover object-center mb-5"
                   />
                   <p className="font-flourish font-bold text-lg md:text-xl text-lavender">{member.name}</p>
                   <p className="font-sans text-sm text-lavender/80 mt-1">{member.role}</p>
